@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="userInput">
+    <input type="text" id="userInputChar">
+    <button onclick="mainArea(userInput,userInputChar)"></button>
+    <script>
+    function countBs(string){
+        let i=0;
+        let count=0;
+        while(i<string.length){
+            if(string[i]=='B'){
+                count++;
+            }
+            else{
+                ;
+            }
+            i++;
+        }
+        return count;
+    }
+    function countChar(string,letter){
+        let i=0;
+        let count=0;
+        while(i<string.length){
+            if(string[i]==letter){
+                count++;
+            }
+            else{
+                ;
+            }
+            i++;
+        }
+        return count;
+    }
+    function mainArea(a,b){
+    var userInput=document.getElementById('userInput').value;
+    var userInputChar=document.getElementById('userInputChar').value;
+    console.log(countChar(userInput,userInputChar));
+    }
+    </script>
+</body>
+</html>
